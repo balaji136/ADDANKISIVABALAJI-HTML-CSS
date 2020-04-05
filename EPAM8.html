@@ -1,0 +1,203 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+input[type=text]{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+input[type=password]{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #3399ff;
+  color: white;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: middle;
+}
+
+input[type=submit]:hover {
+  background-color: #ffff80;
+}
+
+.container {
+  border-radius: 5px;
+  
+  padding: 10px;
+  margin: 0;
+}
+.container-top {
+  border-radius: 5px;
+  background-color: #3399ff;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.container-middle {
+  border-radius: 5px;
+
+  padding: 10px;
+  margin: 0;
+}
+.container-line{
+  align-items: center;
+  display: flex;
+  height: 80px;
+}
+
+.lineHorizontal{
+  border-top: 1px solid rgb(30, 30, 30);
+  width: 100%;
+}
+
+
+.col-33M{
+  width: 50%;
+  float: left;
+}
+.col-33L{
+  
+  width: 45%;
+  float:left;
+}
+.col-33R{
+  
+  width: 5%;
+  float:left;
+  
+}
+.col-50{
+  
+  width: 50%;
+  float:left;
+  
+}
+
+.col-100 {
+  float: left;
+  width: 100%;
+  margin-top: 6px;
+
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.righting{
+float: right;
+}
+h2{
+  color:white;
+}
+
+@media screen and (max-width: 600px) {
+   .col-100, button,input[type=submit],input[type=password],input[type=text] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+</head>
+<body>
+<div class="container-top">
+  <div class="row">
+    <div class="col-33L">
+       <img src="epamimg.png" width="15%" height="10%">
+    </div>
+  
+    <div class="col-33M">
+       <h2> Sign in </h2>
+  </div>
+
+    <div class="col-33R">
+       <h2>X</h2>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <form>
+    
+      <div class="row">
+      <div class="col-100">
+        <input type="text" name="Email" placeholder="Email">
+      </div>
+    </div>
+    
+    
+      <div class="row">
+      <div class="col-100">
+        <input type="password"  name="password" placeholder="password">
+      </div>
+    </div>
+    
+      <div class="row">
+      <div class="col-100">
+      <input type="submit" value="Login">
+    </div>
+  </div>
+    
+  </form>
+</div>
+  <div class="container-middle1">
+    <div class="row">
+      <div class="col-50">
+        <h4><a href="*">forget your password?</a></h4>
+
+    </div>
+    <div class="col-50">
+        <h4 class="righting"><a href="*">Register!</a></h4>
+        
+    </div>
+  </div>
+</div>
+
+<div class="container-line">
+  
+  <div class="lineHorizontal">
+  </div>
+</div>
+<div class="container">
+  
+    
+      <div class="row">
+      <div class="col-100">
+        <button style="color:white;text-align:center;background-color: blue; width:100%; height: 8%; border-radius: 10px;" > <img src="fb.png" width="6%" height="70%"></button>
+      </div>
+    </div>
+    
+    
+      <div class="row">
+      <div class="col-100">
+        <button style="color: white;text-align: center;background-color: #ff1a1a; width:100%; height: 8%; border-radius: 10px;"> <img src="gmail1.jpg" width="6%" height="70%"></button>
+      </div>
+    </div>
+    
+      <div class="row" style="margin-top: 20px;">
+      <div class="col-100">
+      <button style="color:white; text-align: center; background-color: #cccc00; width: 100%; height: 8%; border-radius:10px;"> EPAM LOGIN   </button>
+    </div>
+  </div>
+    
+  
+</div>
+
+</body>
+</html>
